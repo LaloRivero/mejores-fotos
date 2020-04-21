@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <home />
   </div>
 </template>
 
+<script>
+import Home from '@/views/Home'
+export default {
+  data() {
+    return {}
+  },
+  components: { Home }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&family=Fira+Sans:wght@400;500;700&display=swap');
+body {
+  margin: 0;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.mf-button {
+  height: 40px;
+  padding: 10px 20px;
+  background: #212d47;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: content;
+  justify-content: center;
 }
 </style>
