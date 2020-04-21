@@ -55,7 +55,7 @@ export default {
 
 <style scoped>
 .mfTalleres {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   width: 1366px;
   display: flex;
   flex-direction: column;
