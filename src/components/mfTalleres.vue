@@ -24,24 +24,27 @@ export default {
           title: ' ',
           description: ' ',
           img: 'basico/img.png',
-          logo: 'basico/logo.png'
+          logo: 'basico/logo.png',
+          color: 'amarillo'
         },
         {
-          name: 'Taller Básico',
+          name: 'Taller Intermedio',
           title: ' ',
           description: ' ',
           img: 'basico/img.png',
-          logo: 'basico/logo.png'
+          logo: 'basico/logo.png',
+          color: 'azul'
         },
         {
-          name: 'Taller Básico',
+          name: 'Taller Avanzado',
           title: ' ',
           description: ' ',
           img: 'basico/img.png',
-          logo: 'basico/logo.png'
+          logo: 'basico/logo.png',
+          color: 'morado'
         },
         {
-          name: 'Taller Básico',
+          name: 'Taller Especializados',
           title: ' ',
           description: ' ',
           img: 'basico/img.png',

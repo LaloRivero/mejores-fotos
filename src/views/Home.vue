@@ -38,13 +38,21 @@
           </div>
           <div class="encuentranos__social">
             <div class="social__content">
-              <a class="social__facebook" href>
+              <a
+                class="social__facebook"
+                target="_blank"
+                href="https://www.facebook.com/escuelamejoresfotos"
+              >
                 <img src="../assets/iconos/facebook.png" alt="facebook" />
               </a>
-              <a class="social__instagram" href>
+              <a
+                class="social__instagram"
+                target="_blank"
+                href="https://www.instagram.com/escuelamejoresfotos/"
+              >
                 <img src="../assets/iconos/instagram.png" alt="facebook" />
               </a>
-              <a class="social__tictok" href>
+              <a class="social__tictok" target="_blank" href>
                 <img src="../assets/iconos/tik-tok.png" alt="facebook" />
               </a>
             </div>
@@ -52,7 +60,10 @@
           </div>
         </div>
         <div class="encuentranos__maps">
-          <a href>
+          <a
+            target="_blank"
+            href="https://www.google.com.mx/maps/place/Mejores+fotos/@28.6599499,-106.0896278,17z/data=!3m1!4b1!4m5!3m4!1s0x86ea436cb3187dc3:0x7cc52f838fdd58bc!8m2!3d28.6599452!4d-106.0874391"
+          >
             <img src="../assets/mapa.png" alt="ubicacion" />
           </a>
         </div>
@@ -87,8 +98,7 @@ export default {
         name: 'Conoce nuestra galería'
       },
       contacto: {
-        name: 'Enviar Mensaje',
-        color: '#045a4f'
+        name: 'Enviar Mensaje'
       }
     }
   }

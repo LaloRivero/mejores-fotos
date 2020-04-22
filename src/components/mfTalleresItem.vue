@@ -5,7 +5,10 @@
         <img class="item-logo" :src="require(`@/assets/${data.logo}`)" alt />
         <div class="img__container">
           <div v-show="displayDescriptionText" class="active">
-            <div class="overlay"></div>
+            <div v-if="data.color === 'amarillo'" class="overlay__amarillo"></div>
+            <div v-else-if="data.color === 'azul'" class="overlay__azul"></div>
+            <div v-else-if="data.color === 'morado'" class="overlay__morado"></div>
+            <div v-else class="overlay"></div>
             <div class="active__info">
               <h4>En qué consiste el {{ data.name }}</h4>
               <p>
@@ -17,11 +20,7 @@
               </p>
             </div>
           </div>
-          <img
-            class="img__curso"
-            :src="require(`@/assets/${data.img}`)"
-            :alt="data.name"
-          />
+          <img class="img__curso" :src="require(`@/assets/${data.img}`)" :alt="data.name" />
         </div>
         <mf-button class="button" :message="itemMessage"></mf-button>
       </div>
@@ -88,6 +87,27 @@ export default {
   height: 460px;
   position: absolute;
   background: rgba(161, 0, 0, 0.479);
+  border-radius: 5px;
+}
+.overlay__amarillo {
+  width: 300px;
+  height: 460px;
+  position: absolute;
+  background: rgba(230, 166, 32, 0.4);
+  border-radius: 5px;
+}
+.overlay__azul {
+  width: 300px;
+  height: 460px;
+  position: absolute;
+  background: rgba(27, 37, 54, 0.4);
+  border-radius: 5px;
+}
+.overlay__morado {
+  width: 300px;
+  height: 460px;
+  position: absolute;
+  background: rgba(119, 0, 255, 0.4);
   border-radius: 5px;
 }
 .active__info {
