@@ -15,19 +15,15 @@
         </div>
       </div>
     </div>
-    <div class="mf-talleres__section">
-      <mf-talleres />
-    </div>
   </div>
 </template>
 
 <script>
 import mfButton from '@/components/mfButton'
-import mfTalleres from '@/components/mfTalleres'
 
 export default {
   name: 'mfHero',
-  components: { mfButton, mfTalleres },
+  components: { mfButton },
   data() {
     return {
       conocenos: {

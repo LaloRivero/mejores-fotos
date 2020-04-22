@@ -9,15 +9,19 @@
             <div class="active__info">
               <h4>En qué consiste el {{ data.name }}</h4>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                itaque recusandae tenetur asperiores accusantium, alias molestiae!
-                molestiae! molestiae! molestiae! Expedita quod doloremque non
-                provident nemo laudantium natus eius, consectetur maiores incidunt
-                repellendus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati itaque recusandae tenetur asperiores accusantium,
+                alias molestiae! molestiae! molestiae! molestiae! Expedita quod
+                doloremque non provident nemo laudantium natus eius, consectetur
+                maiores incidunt repellendus?
               </p>
             </div>
           </div>
-          <img class="img__curso" :src="require(`@/assets/${data.img}`)" :alt="data.name" />
+          <img
+            class="img__curso"
+            :src="require(`@/assets/${data.img}`)"
+            :alt="data.name"
+          />
         </div>
         <mf-button class="button" :message="itemMessage"></mf-button>
       </div>

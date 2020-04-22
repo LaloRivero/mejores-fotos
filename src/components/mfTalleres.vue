@@ -56,11 +56,11 @@ export default {
 <style scoped>
 .mfTalleres {
   font-family: 'Encode Sans', sans-serif;
-  width: 1366px;
+  max-width: 1366px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .talleres {
   padding: 0;

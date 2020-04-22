@@ -41,6 +41,7 @@ export default {
 
 <style scope>
 .mf-header {
+  width: 100%;
   font-family: 'Fira Sans', sans-serif;
   background: #212d47;
   display: flex;

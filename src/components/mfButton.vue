@@ -15,6 +15,7 @@ export default {
 
 <style scoped>
 .mf-button {
+  font-family: 'Fira Sans', sans-serif;
   height: 30px;
   margin: 20px;
   padding: 10px 20px;
