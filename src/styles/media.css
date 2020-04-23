@@ -107,17 +107,17 @@
     padding: 5px;
   }
   .talleres {
-    width: 80%;
+    width: 100%;
     flex-wrap: nowrap;
     overflow: scroll;
     justify-content: flex-start;
-    padding-left: 10%;
   }
   .talleres ul li {
     overflow: hidden;
   }
   .taller__item {
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 50px;
   }
   /*----------------------------------*/
   /*               Talleres           */
