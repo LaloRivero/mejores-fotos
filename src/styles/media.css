@@ -111,6 +111,7 @@
     overflow: scroll;
     justify-content: flex-start;
     padding-left: 20%;
+    overflow: hidden;
   }
   .taller__item {
     padding-right: 100px;
