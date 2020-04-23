@@ -158,7 +158,27 @@
     justify-content: center;
     margin: 10px 0;
   }
+  .encuentranos__maps a {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .encuentranos__maps img {
-    margin-top: 20px;
+    width: 80%;
+  }
+  .banner__content {
+    margin: 10px 0;
+  }
+  .banner__content h3,
+  p {
+    margin: 0;
+  }
+  .banner__content h3 {
+    font-size: 16px;
+  }
+  .banner__content p {
+    font-size: 12px;
   }
 }
