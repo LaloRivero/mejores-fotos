@@ -107,10 +107,14 @@
     padding: 5px;
   }
   .talleres {
+    width: 80%;
     flex-wrap: nowrap;
     overflow: scroll;
     justify-content: flex-start;
-    padding-left: 20%;
+    padding-left: 10%;
+  }
+  .talleres ul li {
+    overflow: hidden;
   }
   .taller__item {
     padding-right: 100px;
@@ -121,8 +125,11 @@
   .aprende-mas a {
     width: 85%;
   }
+  .foto-paseos__img {
+    width: inherit;
+  }
   .foto-paseos__img img {
-    width: 98%;
+    width: 95%;
   }
   .foto-paseos__img .boton {
     width: 75%;
@@ -150,5 +157,8 @@
     align-items: center;
     justify-content: center;
     margin: 10px 0;
+  }
+  .encuentranos__maps img {
+    margin-top: 20px;
   }
 }
