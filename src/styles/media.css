@@ -36,7 +36,7 @@
     background: white;
   }
   .hero__left-side h1 {
-    margin-top: 20px;
+    margin: 25px 0 0 0;
     text-align: center;
     color: #212d47;
   }
@@ -65,9 +65,10 @@
     width: 400px;
     margin-left: 20px;
     margin-top: 100px;
+    padding: 0px 50px;
   }
   .encuentranos__maps {
-    left: -200px;
+    left: -160px;
     top: 40px;
   }
   .encuentranos__maps a {
