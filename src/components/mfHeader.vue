@@ -3,11 +3,7 @@
     <div class="mf-header">
       <div class="header__container">
         <a href="/" class="header__logo">
-          <img
-            src="../assets/isotipo-blanco-mefo.png"
-            alt="Mejores fotos"
-            class="logo__img"
-          />
+          <img src="../assets/isotipo-blanco-mefo.png" alt="Mejores fotos" class="logo__img" />
         </a>
         <nav class="header__nav">
           <ul class="nav__conteiner">
@@ -39,7 +35,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style>
 .mf-header {
   width: 100%;
   font-family: 'Fira Sans', sans-serif;
@@ -49,7 +45,7 @@ export default {
   align-items: center;
 }
 .header__container {
-  width: 1366px;
+  width: 1350px;
   background-color: #212d47;
   height: 50px;
   display: flex;
@@ -99,5 +95,16 @@ export default {
   height: 40px;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 768) {
+  * {
+    color: red;
+  }
+  .nav__conteiner li {
+    margin: 0 5px !important;
+  }
+  .li_pipes {
+    padding-right: 10px;
+  }
 }
 </style>

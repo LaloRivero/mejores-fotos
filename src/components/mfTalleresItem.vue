@@ -55,9 +55,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .container {
-  width: 320px;
+  width: 300px;
   height: auto;
   margin: 10px 0;
   display: flex;
@@ -76,36 +76,36 @@ export default {
   align-items: center;
 }
 .img__curso {
-  width: 100%;
+  width: 260px;
   border-radius: 5px;
 }
 .active {
   position: relative;
 }
 .overlay {
-  width: 300px;
-  height: 460px;
+  width: 260px;
+  height: 398.667px;
   position: absolute;
   background: rgba(161, 0, 0, 0.479);
   border-radius: 5px;
 }
 .overlay__amarillo {
-  width: 300px;
-  height: 460px;
+  width: 260px;
+  height: 398.667px;
   position: absolute;
   background: rgba(230, 166, 32, 0.4);
   border-radius: 5px;
 }
 .overlay__azul {
-  width: 300px;
-  height: 460px;
+  width: 260px;
+  height: 398.667px;
   position: absolute;
   background: rgba(27, 37, 54, 0.4);
   border-radius: 5px;
 }
 .overlay__morado {
-  width: 300px;
-  height: 460px;
+  width: 260px;
+  height: 398.667px;
   position: absolute;
   background: rgba(119, 0, 255, 0.4);
   border-radius: 5px;
@@ -121,5 +121,6 @@ export default {
 }
 .button {
   width: 80%;
+  margin: 5px;
 }
 </style>

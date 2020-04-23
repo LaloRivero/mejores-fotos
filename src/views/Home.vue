@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <mf-header class="header" />
     <div class="home__content">
       <mf-hero />
       <div class="mf-talleres__section">
@@ -76,9 +75,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-import mfHeader from '@/components/mfHeader'
 import mfHero from '@/components/mfHero'
 import mfTalleres from '@/components/mfTalleres'
 import mfButton from '@/components/mfButton'
@@ -86,8 +82,6 @@ import mfButton from '@/components/mfButton'
 export default {
   name: 'Home',
   components: {
-    // HelloWorld,
-    mfHeader,
     mfHero,
     mfTalleres,
     mfButton
@@ -104,7 +98,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
 .home {
   width: 100%;
   display: flex;
@@ -116,7 +110,7 @@ export default {
   width: inherit;
 }
 .home__content {
-  width: 1366px;
+  max-width: 1350px;
 }
 .aprende-mas {
   width: 100%;
@@ -144,6 +138,7 @@ export default {
   justify-content: center;
 }
 .foto-paseos__img img {
+  width: 90%;
   box-shadow: 0 0 10px 0 gray;
 }
 .foto-paseos__img .boton {
@@ -190,7 +185,7 @@ export default {
   background: linear-gradient(white, #212d47);
 }
 .encuentranos__info {
-  width: 1366px;
+  width: 1350px;
   display: flex;
 }
 .encuentranos__container {

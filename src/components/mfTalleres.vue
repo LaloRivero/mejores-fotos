@@ -1,13 +1,15 @@
 <template>
   <div class="mfTalleres" id="mfTalleres">
-    <div class="title">
-      <h1>Comienza la aventura</h1>
+    <div class="talleres__container">
+      <div class="title">
+        <h1>Comienza la aventura</h1>
+      </div>
+      <ul class="talleres">
+        <li v-for="(item, index) in items" :key="index">
+          <mf-talleres-item :data="item" />
+        </li>
+      </ul>
     </div>
-    <ul class="talleres">
-      <li v-for="(item, index) in items" :key="index">
-        <mf-talleres-item :data="item" />
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -47,8 +49,8 @@ export default {
           name: 'Taller Especializados',
           title: ' ',
           description: ' ',
-          img: 'basico/img.png',
-          logo: 'basico/logo.png'
+          img: 'especial/img.png',
+          logo: 'especial/logo.png'
         }
       ]
     }
@@ -56,10 +58,10 @@ export default {
 }
 </script>
 
-<style scoped>
-.mfTalleres {
+<style>
+.talleres__container {
   font-family: 'Encode Sans', sans-serif;
-  max-width: 1366px;
+  width: 1350px;
   display: flex;
   flex-direction: column;
   align-items: center;

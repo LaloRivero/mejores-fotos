@@ -1,0 +1,77 @@
+@media screen and (max-width: 800px) {
+  .home__content {
+    width: 780px !important;
+  }
+  /*----------------------------------*/
+  /*              Header              */
+  /*----------------------------------*/
+  .nav__conteiner {
+    margin-right: 0;
+  }
+  .nav__conteiner li {
+    margin: 0 5px;
+  }
+  .li_pipes {
+    padding-right: 10px;
+  }
+  /*----------------------------------*/
+  /*               Hero               */
+  /*----------------------------------*/
+  .hero {
+    width: inherit;
+    overflow: hidden;
+  }
+  .hero__container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .hero__right-side {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .hero__right-side img {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background: white;
+  }
+  .hero__left-side h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: #212d47;
+  }
+  .hero__buttons {
+    margin: 10px;
+  }
+  /*----------------------------------*/
+  /*               Talleres           */
+  /*----------------------------------*/
+  .talleres__container {
+    max-width: 100%;
+  }
+  .talleres {
+    justify-content: space-evenly;
+  }
+  /*----------------------------------*/
+  /*             Fotopaseos           */
+  /*----------------------------------*/
+  .encuentranos__info {
+    width: inherit;
+  }
+  .encuentranos__banner {
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+  .encuentranos__maps {
+    left: -200px;
+    top: 20px;
+  }
+  .encuentranos__maps img {
+    width: 420px;
+  }
+  .encuentranos__social {
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+}

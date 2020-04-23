@@ -1,19 +1,24 @@
 <template>
   <div id="app">
+    <mf-header class="header" />
     <home />
   </div>
 </template>
 
 <script>
+import mfHeader from '@/components/mfHeader'
 import Home from '@/views/Home'
 export default {
   data() {
-    return {}
+    return {
+      ipad: window.innerWidth <= 768
+    }
   },
-  components: { Home }
+  components: { Home, mfHeader }
 }
 </script>
 <style>
+@import url('./styles/media.css');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&family=Fira+Sans:wght@400;500;700&display=swap');
 body {

@@ -10,8 +10,8 @@
       <div class="hero__right-side">
         <img src="../assets/hero_img.png" alt="Video" />
         <div class="hero__buttons">
-          <mf-button :message="conocenos"></mf-button>
-          <mf-button :message="aprende"></mf-button>
+          <mf-button class="hero__boton" :message="conocenos"></mf-button>
+          <mf-button class="hero__boton" :message="aprende"></mf-button>
         </div>
       </div>
     </div>
@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       conocenos: {
-        name: 'Conósenos'
+        name: 'Conócenos'
       },
       aprende: {
         name: 'Aprende'
@@ -47,7 +47,7 @@ export default {
   justify-content: center;
 }
 .hero__container {
-  width: 1366px;
+  width: 100%;
   height: 700px;
   background: url('../assets/F-MF-WP.png');
   background-size: cover;
