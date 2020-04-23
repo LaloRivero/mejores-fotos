@@ -211,10 +211,16 @@ export default {
 }
 .encuentranos__maps {
   position: relative;
-  left: -400px;
+  top: 40px;
+  left: -300px;
+}
+.encuentranos__maps img {
+  width: 600px;
+  box-shadow: 0 0 10px 0 gray;
 }
 .encuentranos__social {
   margin-left: 150px;
+  margin-top: 25px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -236,7 +242,7 @@ export default {
   font-weight: bold;
   font-size: 18px;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0 0;
   color: white;
 }
 </style>

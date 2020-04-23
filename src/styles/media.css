@@ -43,6 +43,9 @@
   .hero__buttons {
     margin: 10px;
   }
+  .aprende-mas a {
+    width: 50%;
+  }
   /*----------------------------------*/
   /*               Talleres           */
   /*----------------------------------*/
@@ -65,10 +68,14 @@
   }
   .encuentranos__maps {
     left: -200px;
-    top: 20px;
+    top: 40px;
+  }
+  .encuentranos__maps a {
+    width: inherit;
+    display: block;
   }
   .encuentranos__maps img {
-    width: 420px;
+    width: 400px;
   }
   .encuentranos__social {
     margin-left: 80px;
