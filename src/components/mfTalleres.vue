@@ -6,7 +6,7 @@
       </div>
       <ul class="talleres">
         <li v-for="(item, index) in items" :key="index">
-          <mf-talleres-item :data="item" />
+          <mf-talleres-item :data="item" class="taller__item" />
         </li>
       </ul>
     </div>

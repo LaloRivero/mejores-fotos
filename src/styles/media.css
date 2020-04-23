@@ -1,6 +1,6 @@
 @media screen and (max-width: 800px) {
   .home__content {
-    width: 768px !important;
+    width: 100% !important;
   }
   /*----------------------------------*/
   /*              Header              */
@@ -81,5 +81,76 @@
   .encuentranos__social {
     margin-left: 80px;
     margin-top: 20px;
+  }
+  .contacto__boton {
+    background: #045a4f !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  /*----------------------------------*/
+  /*              Header              */
+  /*----------------------------------*/
+  .header__container {
+    width: inherit;
+  }
+  .nav__conteiner {
+    display: none;
+  }
+  /*----------------------------------*/
+  /*               Hero               */
+  /*----------------------------------*/
+  .hero__left-side h1 {
+    font-size: 32px;
+  }
+  .hero__right-side img {
+    width: 95%;
+    padding: 5px;
+  }
+  .talleres {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+    padding-left: 20%;
+  }
+  .taller__item {
+    padding-right: 100px;
+  }
+  .hero__buttons {
+  }
+  /*----------------------------------*/
+  /*               Talleres           */
+  /*----------------------------------*/
+  .aprende-mas a {
+    width: 85%;
+  }
+  .foto-paseos__img img {
+    width: 98%;
+  }
+  .foto-paseos__img .boton {
+    width: 75%;
+    top: 0px;
+  }
+  .contacto__info h2 {
+    font-size: 28px;
+  }
+  .contacto__boton {
+    font-size: 18px;
+    width: auto;
+  }
+  .encuentranos__maps {
+    position: static;
+  }
+  .encuentranos__info {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .encuentranos__banner {
+    width: 90%;
+    padding: 0;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
   }
 }
