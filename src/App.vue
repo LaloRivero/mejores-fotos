@@ -1,20 +1,34 @@
 <template>
   <div id="app">
-    <mf-header class="header" />
+    <mf-header class="header" v-if="basedOnWindowWidth" />
+    <mf-burguer-menu v-else></mf-burguer-menu>
     <home />
   </div>
 </template>
 
 <script>
 import mfHeader from '@/components/mfHeader'
+import mfBurguerMenu from '@/components/burguerMenu'
 import Home from '@/views/Home'
 export default {
   data() {
     return {
-      ipad: window.innerWidth <= 768
+      windowWidth: null
     }
   },
-  components: { Home, mfHeader }
+  components: { Home, mfHeader, mfBurguerMenu },
+  created() {
+    // window.addEventListener((this.windowWidth = window.innerWidth))
+    this.windowWidth = window.innerWidth
+  },
+  computed: {
+    basedOnWindowWidth() {
+      if (this.windowWidth > 736) {
+        return true
+      }
+      return false
+    }
+  }
 }
 </script>
 <style>
