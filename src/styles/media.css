@@ -123,7 +123,8 @@
   /*               Talleres           */
   /*----------------------------------*/
   .aprende-mas a {
-    width: 85%;
+    width: 60%;
+    font-size: 14px;
   }
   .foto-paseos__img {
     width: inherit;
@@ -132,8 +133,9 @@
     width: 95%;
   }
   .foto-paseos__img .boton {
-    width: 75%;
+    width: 50%;
     top: 0px;
+    font-size: 16px;
   }
   .contacto__info h2 {
     font-size: 28px;

@@ -67,6 +67,7 @@ export default {
   overflow: hidden;
   border-radius: 7px;
   box-shadow: 0 0 10px 0 gray;
+  background-color: white;
 }
 .content {
   padding: 10px;

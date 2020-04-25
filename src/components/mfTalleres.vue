@@ -9,6 +9,8 @@
           <mf-talleres-item :data="item" class="taller__item" />
         </li>
       </ul>
+      <img class="talleres__arrow" src="../assets/arrow.png" alt="arrow" />
+      <img class="talleres__arrow-right" src="../assets/arrow-right.png" alt="arrow" />
     </div>
   </div>
 </template>
@@ -66,6 +68,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .talleres {
   padding: 0;
@@ -76,12 +79,29 @@ export default {
   align-items: center;
   justify-content: space-between;
 }
-
+.taller__item {
+  position: relative;
+  z-index: 10;
+}
 .title {
   align-self: flex-start;
 }
 .title h1 {
   margin-top: 40px;
   margin-left: 40px;
+}
+.talleres__arrow {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 2;
+  width: 30px;
+}
+.talleres__arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 2;
+  width: 30px;
 }
 </style>
