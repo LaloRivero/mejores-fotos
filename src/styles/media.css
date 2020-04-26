@@ -85,6 +85,12 @@
   .contacto__boton {
     background: #045a4f !important;
   }
+  .talleres__arrow {
+    display: none;
+  }
+  .talleres__arrow-right {
+    display: none;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 736px) {
   /*----------------------------------*/
@@ -182,5 +188,11 @@
   }
   .banner__content p {
     font-size: 12px;
+  }
+  .talleres__arrow {
+    display: block;
+  }
+  .talleres__arrow-right {
+    display: block;
   }
 }
