@@ -9,8 +9,13 @@
           <mf-talleres-item :data="item" class="taller__item" />
         </li>
       </ul>
-      <img class="talleres__arrow" src="../assets/arrow.png" alt="arrow" />
-      <img class="talleres__arrow-right" src="../assets/arrow-right.png" alt="arrow" />
+      <mf-talleres-item :data="sendItem" class="item__taller"></mf-talleres-item>
+      <a class="arrow-left__container" @click="moveBackwardsItem">
+        <img class="talleres__arrow" src="../assets/arrow.png" alt="arrow" />
+      </a>
+      <a class="arrow-right__container" @click="moveFowardsItem">
+        <img class="talleres__arrow-right" src="../assets/arrow-right.png" alt="arrow" />
+      </a>
     </div>
   </div>
 </template>
@@ -22,6 +27,8 @@ export default {
   components: { mfTalleresItem },
   data() {
     return {
+      index: 0,
+      sendItem: {},
       items: [
         {
           name: 'Taller Básico',
@@ -55,6 +62,23 @@ export default {
           logo: 'especial/logo.png'
         }
       ]
+    }
+  },
+  mounted: function() {
+    this.sendItem = this.items[0]
+  },
+  methods: {
+    moveFowardsItem() {
+      if (this.index < this.items.length) {
+        this.index = this.index + 1
+        this.sendItem = this.items[this.index]
+      }
+    },
+    moveBackwardsItem() {
+      if (this.index >= 0) {
+        this.index = this.index - 1
+        this.sendItem = this.items[this.index]
+      }
     }
   }
 }
@@ -95,13 +119,19 @@ export default {
   top: 50%;
   left: 10px;
   z-index: 2;
-  width: 30px;
+  width: 40px;
 }
 .talleres__arrow-right {
   position: absolute;
   top: 50%;
   right: 10px;
   z-index: 2;
-  width: 30px;
+  width: 40px;
+}
+.item__taller {
+  display: none;
+}
+.talleres__container a {
+  cursor: pointer;
 }
 </style>

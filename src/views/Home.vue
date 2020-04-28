@@ -13,7 +13,10 @@
         <mf-button class="boton" :message="fotopaseo"></mf-button>
       </section>
       <section class="contacto">
-        <img src="../assets/TELÉFONO.png" alt="cellphone" />
+        <div class="contacto__telefono-wapp">
+          <img src="../assets/TELÉFONO.png" alt="cellphone" />
+          <img src="../assets/whatsapp.png" alt="whatsapp" class="whats" />
+        </div>
         <div class="contacto__info">
           <h2>
             Contáctate
@@ -161,9 +164,17 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
-.contacto img {
+.contacto__telefono-wapp {
   margin-top: 20px;
   width: 30%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whats {
+  position: absolute;
+  z-index: 2;
 }
 .contacto__info h2 {
   text-align: center;
@@ -171,7 +182,7 @@ export default {
   font-weight: bold;
 }
 .contacto__boton {
-  background: #045a4f;
+  background: #045a4f !important;
   font-size: 24px;
   width: 200px;
   align-self: center;
