@@ -14,7 +14,7 @@
       </section>
       <section class="contacto">
         <div class="contacto__telefono-wapp">
-          <img src="../assets/TELÉFONO.png" alt="cellphone" />
+          <img src="../assets/TELÉFONO.png" alt="cellphone" class="phone" />
           <img src="../assets/whatsapp.png" alt="whatsapp" class="whats" />
         </div>
         <div class="contacto__info">
@@ -171,6 +171,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.phone {
+  width: 100%;
 }
 .whats {
   position: absolute;
