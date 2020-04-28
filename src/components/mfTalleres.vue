@@ -9,7 +9,12 @@
           <mf-talleres-item :data="item" class="taller__item" />
         </li>
       </ul>
-      <mf-talleres-item :data="sendItem" class="item__taller"></mf-talleres-item>
+      <transition name="component-fade" mode="out-in">
+        <!-- <transition name="fade"> -->
+        <div class="item__transition" v-show="toggleElement">
+          <mf-talleres-item v-show="toggleElement" :data="sendItem" class="item__taller"></mf-talleres-item>
+        </div>
+      </transition>
       <a class="arrow-left__container" @click="moveBackwardsItem">
         <img class="talleres__arrow" src="../assets/arrow.png" alt="arrow" />
       </a>
@@ -28,6 +33,7 @@ export default {
   data() {
     return {
       index: 0,
+      toggleElement: true,
       sendItem: {},
       items: [
         {
@@ -42,7 +48,7 @@ export default {
           name: 'Taller Intermedio',
           title: ' ',
           description: ' ',
-          img: 'basico/img.png',
+          img: 'especial/img.png',
           logo: 'basico/logo.png',
           color: 'azul'
         },
@@ -69,22 +75,39 @@ export default {
   },
   methods: {
     moveFowardsItem() {
-      if (this.index < this.items.length) {
+      if (this.index + 1 < this.items.length) {
+        this.toggleElement = false
         this.index = this.index + 1
         this.sendItem = this.items[this.index]
       }
     },
     moveBackwardsItem() {
-      if (this.index >= 0) {
+      if (this.index > 0) {
+        this.toggleElement = false
         this.index = this.index - 1
         this.sendItem = this.items[this.index]
       }
+    }
+  },
+  watch: {
+    sendItem() {
+      setTimeout(() => {
+        this.toggleElement = true
+      }, 150)
     }
   }
 }
 </script>
 
 <style>
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+.component-fade-enter,
+.component-fade-leave-to {
+  opacity: 0;
+}
 .talleres__container {
   font-family: 'Encode Sans', sans-serif;
   width: 1350px;
@@ -130,6 +153,7 @@ export default {
 }
 .item__taller {
   display: none;
+  margin-top: 110px !important;
 }
 .talleres__container a {
   cursor: pointer;

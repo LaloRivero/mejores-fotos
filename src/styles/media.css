@@ -119,12 +119,23 @@
     overflow: scroll;
     justify-content: flex-start;
   }
+  .talleres__container {
+    height: 700px;
+    position: relative;
+  }
+  .title {
+    position: absolute;
+    top: 0;
+  }
   .talleres ul li {
     overflow: hidden;
   }
   .taller__item {
     padding-left: 60px;
     padding-right: 50px;
+  }
+  .item__transition {
+    margin-top: 100px;
   }
   /*----------------------------------*/
   /*               Talleres           */
