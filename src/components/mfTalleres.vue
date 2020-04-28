@@ -10,8 +10,13 @@
         </li>
       </ul>
       <transition name="component-fade" mode="out-in">
-        <!-- <transition name="fade"> -->
-        <div class="item__transition" v-show="toggleElement">
+        <div
+          class="item__transition"
+          v-show="toggleElement"
+          v-touch
+          @swipeleft="moveFowardsItem"
+          @swiperight="moveBackwardsItem"
+        >
           <mf-talleres-item v-show="toggleElement" :data="sendItem" class="item__taller"></mf-talleres-item>
         </div>
       </transition>
@@ -142,14 +147,16 @@ export default {
   top: 50%;
   left: 10px;
   z-index: 2;
-  width: 40px;
+  width: 30px;
+  display: none;
 }
 .talleres__arrow-right {
   position: absolute;
   top: 50%;
   right: 10px;
   z-index: 2;
-  width: 40px;
+  width: 30px;
+  display: none;
 }
 .item__taller {
   display: none;
